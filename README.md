@@ -5,7 +5,7 @@ This project demonstrates an **end-to-end real-time data engineering pipeline** 
 We built a system that ingests live stock data with Python, streams it through Kafka running on EC2, stores it in Amazon S3, and makes it queryable with AWS Glue and Athena.
 
 ## 🏗️ Architecture
-**Producer → Kafka Broker (EC2) → Consumer → Amazon S3 → Glue Crawler → Glue Catalog → Athena**
+![Architecture](https://github.com/user-attachments/assets/4fcbd9a9-17e4-4ec4-bfae-71a838a622a7)
 
 1. **Producer (Python + yFinance)**: Collects live stock data and publishes to a Kafka topic.  
 2. **Kafka Broker (EC2)**: Streams the data in real-time.  
