@@ -9,7 +9,7 @@ We built a system that ingests live stock data with Python, streams it through K
 
 1. **Producer (Python + yFinance)**: Collects live stock data and publishes to a Kafka topic.  
 2. **Kafka Broker (EC2)**: Streams the data in real-time.  
-3. **Consumer (Python)**: Reads messages from Kafka and writes gzipped JSON files into S3.  
+3. **Consumer (Python)**: Reads messages from Kafka and writes JSON files into S3.  
 4. **AWS Glue Crawler & Catalog**: Creates schema definitions from S3 data.  
 5. **AWS Athena**: Queries real-time data directly from S3.
 
@@ -26,7 +26,7 @@ We built a system that ingests live stock data with Python, streams it through K
 ## 📂 Dataset
 We focused on the **data pipeline & operations**, so any stock dataset can be used.  
 Dataset used in the original reference project:  
-👉 [indexProcessed.csv](https://github.com/darshilparmar/stock-market-kafka-data-engineering-project/blob/main/indexProcessed.csv)
+👉 [indexProcessed.csv](https://github.com/bhaskar4297/Kafka-Based-Stock-Market-Streaming-and-Analytics-Pipeline/blob/main/indexProcessed.csv)
 
 
 ## 🚀 How to Run
